@@ -1,10 +1,11 @@
 {
   "name": "lab3-meteo-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI-програма для роботи з JSON-документом доби вимірювань метеостанції",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/maksymmm1/lab3-meteo-cli/issues"
   },
-  "homepage": "https://github.com/maksymmm1/lab3-meteo-cli#readme"
+  "homepage": "https://github.com/maksymmm1/lab3-meteo-cli#readme",
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
 }
