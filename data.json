@@ -1,0 +1,50 @@
+{
+  "stationId": "MST-014",
+  "stationName": "Метеостанція Львів-Центр",
+  "date": "2026-09-14",
+  "location": {
+    "latitude": 49.8397,
+    "longitude": 24.0297
+  },
+  "sensors": [
+    {
+      "sensorId": "TEMP-01",
+      "type": "temperature",
+      "unit": "°C",
+      "manufacturer": "Vaisala",
+      "isActive": true,
+      "readings": [
+        { "timestamp": "2026-09-14T00:00:00", "value": 14.2, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T06:00:00", "value": 11.8, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T12:00:00", "value": null, "status": "error", "errorCode": "SENSOR_TIMEOUT" },
+        { "timestamp": "2026-09-14T18:00:00", "value": 19.5, "status": "ok", "errorCode": null }
+      ]
+    },
+    {
+      "sensorId": "HUM-02",
+      "type": "humidity",
+      "unit": "%",
+      "manufacturer": null,
+      "isActive": true,
+      "readings": [
+        { "timestamp": "2026-09-14T00:00:00", "value": 78, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T06:00:00", "value": 82, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T12:00:00", "value": 65, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T18:00:00", "value": null, "status": "error", "errorCode": "CALIBRATION_FAILURE" }
+      ]
+    },
+    {
+      "sensorId": "PRES-03",
+      "type": "pressure",
+      "unit": "hPa",
+      "manufacturer": "Bosch",
+      "isActive": false,
+      "readings": [
+        { "timestamp": "2026-09-14T00:00:00", "value": 1012.3, "status": "ok", "errorCode": null },
+        { "timestamp": "2026-09-14T06:00:00", "value": null, "status": "error", "errorCode": "SENSOR_OFFLINE" },
+        { "timestamp": "2026-09-14T12:00:00", "value": null, "status": "error", "errorCode": "SENSOR_OFFLINE" },
+        { "timestamp": "2026-09-14T18:00:00", "value": 1009.7, "status": "ok", "errorCode": null }
+      ]
+    }
+  ]
+}
